@@ -1,0 +1,15 @@
+n=int(input())
+b=0
+d=0
+j=0
+while(n):
+    r=n%10
+    d=d+r*(8**j)
+    j=j+1
+    n=n//10
+i=1
+while(d):
+    b=b+(d%2)*i
+    i=i*10
+    d=d//2
+print(b)
