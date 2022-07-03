@@ -13,4 +13,4 @@ for i in range(n,m+1):
         if(i%d==0):
             s+=1
     if(s==c):
-        print(i,end=" ")
+        print(i,end=' ')
