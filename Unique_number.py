@@ -1,7 +1,7 @@
-n=(input())
-i=list(n)
-a=set(i)
-if len(a)==len(i):
-    print("Unique Number")
+n=str(input())
+l=list(n)
+a=set(l)
+if len(a)==len(l):
+    print('Unique Number')
 else:
-    print("Not Unique Number")
+    print('Not Unique Number')
