@@ -1,31 +1,11 @@
-from math import sqrt
-def getFactorization(x):
-    count=0
-    v=[]
-    while(x%2==0):
-        count+=1
-        x=x//2
-    if(count!=0):
-        v.append(count)
-    for i in range(3,int(sqrt(x)) +12):
-        count=0
-        
-        while(x%i==0):
-            count+=1
-            x//=i
-        if (count!=0):
-            v.append(count)
-    if(x>1):
-        v.append(1)
-    return v
-def nonPrimeDivisors(N):
-    v=getFactorization(N)
-    ret=1
-    
-    for i in range(len(v)):
-        ret=ret*(v[i]+1)
-    ret=ret-len(v)
-    return ret
-if __name__ =='__main__':
-    N=int(input())
-    print(nonPrimeDivisors(N))
+c=0
+n=int(input())
+for i in range(1,n+1):
+    if(n%i==0):
+        fc=0
+        for j in range(1,i+1):
+            if(i%j==0):
+                fc+=1
+        if(fc!=2):
+            c+=1
+print(c)
