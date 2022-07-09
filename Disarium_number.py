@@ -7,7 +7,7 @@ while(n):
     s+=r**l
     n=n//10
     l-=1
-if s==d:
+if(s==d):
     print(True)
 else:
     print(False)
