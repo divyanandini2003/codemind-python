@@ -1,2 +1,1 @@
-n=input()
-print(n[::-1])
+print(*reversed(list(map(str,input().split()))))
